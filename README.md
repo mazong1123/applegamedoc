@@ -8,7 +8,7 @@ GET http://xxx/GetCurrentUserMoney?tocken=099394834eiirejire00909092093206789009
 
 ### 返回
 
-```json
+```cpp
 {
   code: '0000' // 0000表示成功。非0000表示失败, 失败信息在message字段里面
   message: ''
@@ -70,7 +70,7 @@ POST http://xxx/StartGame
 
 ### 返回
 
-```json
+```cpp
 {
   code: '0000' // 0000表示成功。非0000表示失败, 失败信息在message字段里面
   message: ''
@@ -96,7 +96,7 @@ GET http://xxx/StartLever?token=099394834eiirejire009090920932067890098&action=1
 
 ### 返回
 
-```json
+```cpp
 {
   code: '0000' // 0000表示成功。非0000表示失败, 失败信息在message字段里面
   message: ''
@@ -117,7 +117,7 @@ GET http://xxx/GiveupLever?token=099394834eiirejire009090920932067890098
 
 ### 返回
 
-```json
+```cpp
 {
   code: '0000' // 0000表示成功。非0000表示失败, 失败信息在message字段里面
   message: ''
