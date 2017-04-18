@@ -1,7 +1,7 @@
 
 ## 获取当前用户流量币
 
-GET http://xxx/GetCurrentUserMoney?tocken=099394834eiirejire009090920932067890098
+GET http://xxx/GetCurrentUserMoney.do?tocken=099394834eiirejire009090920932067890098
 
 ### 参数
 - token 用于识别用户身份。该值由流量银行跳转到游戏页面带过来，前台页面获取后每次调用api都需要传给后台
@@ -20,7 +20,7 @@ GET http://xxx/GetCurrentUserMoney?tocken=099394834eiirejire00909092093206789009
 
 ## 开始游戏
 
-POST http://xxx/StartGame
+POST http://xxx/StartGame.do
 
 ### 参数
 - token 用于识别用户身份
@@ -66,7 +66,7 @@ POST http://xxx/StartGame
 </tr>
 </table>
 
-由于前台画面已固定，所以后台需要按照上述顺序固定好赌注类型的Id, 例如前台如果传`1=5;3=10;7=2`, 代表用户押注铃铛5个币, 西瓜10个币，星星2个币。
+由于前台画面已固定，所以后台需要按照上述顺序固定好赌注类型的Id, 例如前台如果传`1=5;3=10;7=2`, 代表用户押注铃铛5个币, 橙子10个币，星星2个币。
 
 ### 返回
 
@@ -88,7 +88,7 @@ POST http://xxx/StartGame
 游戏在用户中奖后，还会出现一个杠杆赌博游戏，即猜左右。如果猜对了，会将奖励翻倍，如果猜错了，奖励失效。
 > 注: 这个杠杆游戏用户可以放弃，放弃的接口见后面。放弃后用户获得常规奖励。
 
-GET http://xxx/StartLever?token=099394834eiirejire009090920932067890098&action=1
+GET http://xxx/StartLever.do?token=099394834eiirejire009090920932067890098&action=1
 
 ### 参数
 - token 用于识别用户身份
@@ -110,7 +110,7 @@ GET http://xxx/StartLever?token=099394834eiirejire009090920932067890098&action=1
 ### 放弃中奖后杠杆
 用户可以放弃中奖后杠杆。如果放弃了中奖后杠杆，用户会获得常规奖励。
 
-GET http://xxx/GiveupLever?token=099394834eiirejire009090920932067890098
+GET http://xxx/GiveupLever.do?token=099394834eiirejire009090920932067890098
 
 ### 参数
 - token 用于识别用户身份
