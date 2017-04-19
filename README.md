@@ -1,4 +1,7 @@
 
+## 通用参数
+每个api都需要加上参数gameId=d58adea36cb54aa2a2ddeec276590463
+
 ## 获取当前用户流量币
 
 GET http://xxx/GetCurrentUserMoney.do?tocken=099394834eiirejire009090920932067890098
@@ -78,6 +81,7 @@ POST http://xxx/StartGame.do
     prizeId: 3 // 这次中奖的赌注Id
     isAward: true // true表示当前用户中奖，false表示当前用户未中奖
     money: 123 // 当前用户此时的流量币
+    positionId: 0 // 从左上角开始顺时针计数，从0开始，表示这次应该落在哪个赌注上
   }
 }
 ```
